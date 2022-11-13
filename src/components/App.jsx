@@ -1,4 +1,5 @@
-import { StatisticsWidget } from './StatisticsWidget/StatisticsWidget';
+import StatisticsWidget from './StatisticsWidget/StatisticsWidget';
+
 export const App = () => {
   return (
     <>

@@ -2,7 +2,9 @@ import PropTypes from 'prop-types';
 export const StatisticList = ({
   total,
   positiveFeedback,
-  stat: { good, neutral, bad },
+  good,
+  neutral,
+  bad,
 }) => {
   return (
     <ul>
@@ -16,10 +18,8 @@ export const StatisticList = ({
 };
 StatisticList.propTypes = {
   total: PropTypes.number.isRequired,
-  positivePercentage: PropTypes.number.isRequired,
-  stat: PropTypes.shape({
-    good: PropTypes.number.isRequired,
-    neutral: PropTypes.number.isRequired,
-    bad: PropTypes.number.isRequired,
-  }),
+  positiveFeedback: PropTypes.number.isRequired,
+  good: PropTypes.number.isRequired,
+  neutral: PropTypes.number.isRequired,
+  bad: PropTypes.number.isRequired,
 };
